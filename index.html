@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="phApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="App/bower_components/angular.js"></script>
+    <script src="App/component/js/app.js"></script>
+</head>
+<body>
+<div ng-controller="pwc">
+    <h1>Converting From Roman To Hindu Arabic </h1>
+    <input type="text" ng-model="roman" placeholder="Enter Roman..">
+    <button ng-click="convertRoman();">Convert</button>
+    <br>
+    <br>
+    <b>Result:</b>{{result}}
+</div>
+</body>
+</html>
