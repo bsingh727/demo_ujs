@@ -33,6 +33,10 @@ app.service('romanToHinduArabic',function (convertDigit) {
         for(var i=0;i<size;i++){
             r1=roman.charAt(i);
             d1=convertDigit.getDigit(r1);
+            if(i==0 && d1==0){
+                han="invalid";
+                break;
+            }
             op=0;
             if(i<size-1){
                 r2=roman.charAt(i+1);

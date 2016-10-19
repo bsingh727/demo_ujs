@@ -31,13 +31,6 @@ describe('pwc',function() {
             expect($scope.strength).toEqual('weak');
         });
     });
-    describe('Equal Number',function () {
-    it('should be equal',function () {
-        var a=4;
-        expect(a).toBe('4');
-
-     });
-    });
     describe('productDetails',function () {
         var $httpBackend;
         beforeEach(inject(function($injector) {
@@ -66,5 +59,15 @@ describe('pwc',function() {
             );
 
         }));
-    })
+    });
+    describe('Roman convert to Number',function () {
+        it('Roman convert to Number should be equal',function () {
+            var $scope = {};
+            var controller = $controller('pwc', {$scope: $scope});
+            $scope.roman = 'xx';
+            $scope.convertRoman();
+            expect($scope.result).toBe(20);
+
+        });
+    });
 });
