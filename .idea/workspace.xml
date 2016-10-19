@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f06bb8e-585a-44d7-ba21-0455210ec843" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="$PROJECT_DIR$/karma.conf.js" />
-    </list>
+    <list default="true" id="1f06bb8e-585a-44d7-ba21-0455210ec843" name="Default" comment="" />
     <ignored path="CustomizeAdmin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -363,12 +360,12 @@
       <workItem from="1476694924104" duration="946000" />
       <workItem from="1476768382520" duration="1867000" />
       <workItem from="1476787248913" duration="752000" />
-      <workItem from="1476855708958" duration="2004000" />
+      <workItem from="1476855708958" duration="2150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51520000" />
+    <option name="totallyTimeSpent" value="51666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
