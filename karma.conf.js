@@ -65,16 +65,16 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    reporters: ['progress', 'coverage', 'dots', 'junit'],
+    /*reporters: ['progress', 'coverage', 'dots', 'junit'],
 
-    junitReporter: {
-      outputDir: 'karma-results',
-      outputFile: 'karma-results.xml'
-    },
+     junitReporter: {
+     outputDir: 'karma-results',
+     outputFile: 'karma-results.xml'
+     },*/
 
-    browsers: ['Phantomjs','Chrome'],
+    browsers: ['Chrome'],
 
-    singleRun: true,
+    singleRun: false,
     /* reporters : ['dots', 'junit'],
   junitReporter:{
     outputFile: 'test-results.xml'
