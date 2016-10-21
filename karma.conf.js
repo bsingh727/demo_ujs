@@ -72,7 +72,7 @@ module.exports = function(config) {
       outputFile: 'karma-results.xml'
     },
 
-    browsers: ['PhantomJS'],
+    browsers: ['Phantomjs','Chrome'],
 
     singleRun: true,
     /* reporters : ['dots', 'junit'],
