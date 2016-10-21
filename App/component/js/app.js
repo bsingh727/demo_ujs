@@ -16,6 +16,17 @@ app.controller('pwc',function($scope,romanToHinduArabic,productDetails) {
         }
     }
     $scope.convertRoman=function () {
+        console.log(typeof ($scope.roman));
+        if($scope.roman == ""){
+            console.log(1);
+            $scope.result = "invalid";
+            return;
+        }else if(typeof $scope.roman  == undefined){
+            console.log(2);
+
+            $scope.result = "invalid";
+            return;
+        }
         $scope.result=romanToHinduArabic.convertRomanToHinduArabic($scope.roman)
     }
     var productdetails='';
@@ -33,7 +44,7 @@ app.service('romanToHinduArabic',function (convertDigit) {
         for(var i=0;i<size;i++){
             r1=roman.charAt(i);
             d1=convertDigit.getDigit(r1);
-            if(i==0 && d1==0){
+            if(d1==0){
                 han="invalid";
                 break;
             }

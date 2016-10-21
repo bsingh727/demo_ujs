@@ -31,7 +31,7 @@ describe('pwc',function() {
             expect($scope.strength).toEqual('weak');
         });
     });
-    describe('productDetails',function () {
+    /*describe('productDetails',function () {
         var $httpBackend;
         beforeEach(inject(function($injector) {
             $httpBackend = $injector.get('$httpBackend');
@@ -40,7 +40,7 @@ describe('pwc',function() {
 
             var $scope = {};
 
-            /* Code Under Test */
+            /!* Code Under Test *!/
             $http.get('http://localhost:63342/CustomizeAdmin/product_details.json')
                 .success(function(data, status, headers, config) {
                     $scope.valid = true;
@@ -49,7 +49,7 @@ describe('pwc',function() {
                 .error(function(data, status, headers, config) {
                     $scope.valid = false;
                 });
-            /* End */
+            /!* End *!/
             $httpBackend
                 .when('http://localhost:63342/CustomizeAdmin/product_details.json')
                 .respond(200, {"Data":[{"id":128282,"pd_name":"sumsungZ3"}]});
@@ -59,7 +59,7 @@ describe('pwc',function() {
             );
 
         }));
-    });
+    });*/
     describe('Roman convert to Number',function () {
         it('Roman convert to Number should be equal',function () {
             var $scope = {};
@@ -69,5 +69,26 @@ describe('pwc',function() {
             expect($scope.result).toBe(20);
 
         });
+
+        it('Roman convert to Number should be equal',function () {
+            var $scope = {};
+            var controller = $controller('pwc', {$scope: $scope});
+            $scope.roman = 'Xxi';
+            $scope.convertRoman();
+            expect($scope.result).toBe(21);
+
+        });
+
+
+        it('Roman convert to Number should be equal',function () {
+            var $scope = {};
+            var controller = $controller('pwc', {$scope: $scope});
+            $scope.roman =  "124";
+            $scope.convertRoman();
+            expect($scope.result).toBe('invalid');
+
+        });
+
+
     });
 });
