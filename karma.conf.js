@@ -73,12 +73,11 @@ module.exports = function(config) {
      },*/
 
     browsers: ['Chrome'],
-
     singleRun: true;
      reporters : ['dots', 'junit'],
   junitReporter:{
     outputFile: 'test-results.xml'
-  },  // Concurrency level
+  }; // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
 
